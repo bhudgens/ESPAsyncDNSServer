@@ -194,16 +194,14 @@ AsyncDNSServer::replyWithIP(AsyncUDPPacket &packet)
 
 
   #ifdef DEBUG
-    DEBUG_OUTPUT.print("DNS responds: ");
-    DEBUG_OUTPUT.print(_resolvedIP[0]);
-    DEBUG_OUTPUT.print(".");
-    DEBUG_OUTPUT.print(_resolvedIP[1]);
-    DEBUG_OUTPUT.print(".");
-    DEBUG_OUTPUT.print(_resolvedIP[2]);
-    DEBUG_OUTPUT.print(".");
-    DEBUG_OUTPUT.print(_resolvedIP[3]);
-//    DEBUG_OUTPUT.print(" for ");
-//    DEBUG_OUTPUT.println(getDomainNameWithoutWwwPrefix());
+    Serial.print("DNS responds: ");
+    Serial.print(_resolvedIP[0]);
+    Serial.print(".");
+    Serial.print(_resolvedIP[1]);
+    Serial.print(".");
+    Serial.print(_resolvedIP[2]);
+    Serial.print(".");
+    Serial.print(_resolvedIP[3]);
   #endif
 }
 
